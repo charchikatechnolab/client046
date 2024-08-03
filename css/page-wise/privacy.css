@@ -1,0 +1,25 @@
+.servicesection{
+    padding:20px;
+    width: 80%;
+    margin: auto;
+}
+.servicesection h1{
+  font-size: 30px;
+}
+
+.servicesection .imagebanner{
+ width:100%;
+ padding:2px;
+}
+.imagebanner img{
+  width: 100%;
+  height:200px;
+}
+@media all and (max-width:800px) {
+  .servicesection{
+    width:90%;
+  }
+  .logo_image h1{
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,79 @@
+/* START GRIDVIEW CSS */
+.datatableskin {
+    border-spacing: 0;
+    margin-bottom: 20px;
+    background-color: white;
+    border-collapse: collapse;
+    border: 1px solid grey;
+}
+
+.datatableskin tr{
+    padding-inline: 05px;
+    border-bottom: 1px solid grey;
+}
+.datatableskin tbody tr td,
+.datatableskin tbody tr th{
+   padding: 0.2%;
+   
+}
+.datatableskin tbody tr:hover {
+    background-color: #f0f8ff;
+    cursor: pointer;
+}
+.datatableskin tbody tr {
+    text-align: left;
+    padding-left: 10px;
+}
+.datatableskin tbody tr td {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.datatableskin tfoot th,
+.datatableskin thead th{
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+    cursor: pointer;
+    text-align: left;
+}
+
+/* END GRIDVIEW  */
+@media all and (max-width:800px){
+    .datatableskin{
+        width: 90%;
+    
+    }
+    .datatableskin tbody tr{
+       display: flex;
+      flex-direction: column;
+        margin:0;  
+    }
+    .datatableskin tbody tr td{
+        padding: 10px;
+    }
+    .datatableskin thead{
+        display:none;
+     }
+     .datatableskin tbody td,.dattable tbody th{
+      
+        text-align:right;
+     }
+     .datatableskin tbody tr th {
+        background-color:var(--Base_Shade);
+        color:white;
+        padding:5px;
+        text-align:left;
+      }
+      .datatableskin tbody  td[data-title]:before{
+        content: attr(data-title) ;
+        float: left;
+        color: rgba(0,0,0,.54);
+    }
+    .datatableskin tbody tr:hover{
+        background-color:transparent;
+        cursor:pointer;
+      }
+      .datatableskin tbody tr td:hover{
+        background-color:#f0f8ff;
+        cursor:pointer;
+      }
+}
